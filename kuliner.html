@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuliner Binjai</title>
+    <style>
+        body {
+            background: bisque;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h2 {
+            font-family: 'Georgia', serif;
+            font-size: 2.5em;
+            margin-top: 50px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding: 50px 0;
+        }
+        .grid > article {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            text-align: center;
+            background: whitesmoke;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .grid > article img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .konten {
+            padding: 20px;
+        }
+        .konten h5 {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        .konten p {
+            margin: 0;
+            font-size: 1em;
+            color: #555;
+        }
+        .grid > article:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+        @media (max-width: 1000px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 800px) {
+            .grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h2>KULINER BINJAI</h2>
+    </center>
+    <div class="container">
+        <main class="grid">
+            <article>
+                <img src="slice cake.jpg" alt="Slice Cake">
+                <div class="konten">
+                    <h5>Dessert</h5>
+                    <p>Rp. 15,000.00</p>
+                </div>
+            </article>
+            <article>
+                <img src="puding.jpg" alt="Pudding">
+                <div class="konten">
+                    <h5>Dessert</h5>
+                    <p>Rp. 25,000.00</p>
+                </div>
+            </article>
+            <article>
+                <img src="donat.jpg" alt="Donut">
+                <div class="konten">
+                    <h5>Dessert</h5>
+                    <p>Rp. 40,000.00</p>
+                </div>
+            </article>
+            <article>
+                <img src="sate.jpg" alt="Sate">
+                <div class="konten">
+                    <h5>Makanan Berat</h5>
+                    <p>Rp. 15,000.00</p>
+                </div>
+            </article>
+            <article>
+                <img src="ayam bakar.jpg" alt="Ayam Bakar">
+                <div class="konten">
+                    <h5>Makanan Berat</h5>
+                    <p>Rp. 20,000.00</p>
+                </div>
+            </article>
+            <article>
+                <img src="buburayam.jpg" alt="Bubur Ayam">
+                <div class="konten">
+                    <h5>Sarapan</h5>
+                    <p>Rp. 15,000.00</p>
+                </div>
+            </article>
+        </main>
+    </div>
+</body>
+</html>

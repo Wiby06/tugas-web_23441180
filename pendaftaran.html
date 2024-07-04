@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi Peserta</title>
+    <style>
+    body{
+            background-color:cadetblue;
+            text-align: center;
+            color:whitesmoke;
+        }
+        input[type="text"],input[type="password"]{
+            border: none;
+            border-radius: 20px;
+            padding:10px;
+        }
+
+        .form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .user-input{
+            margin-bottom: 10px;
+        }
+
+        form{
+            padding: 10px;
+        }
+
+        button{
+            border: none;
+            border-radius: 10px;
+            width: 100px;
+            padding: 5px;
+            background-color:darkslategray;
+            color:azure;
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Silahkan Isi</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="latihan4.html">Page</a></li>
+            <li><a href="registrasi.html">About Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="form">
+            <h1>Registrasi Peserta</h1>
+            <form action="register" method="post">
+                <div class="user-input">
+                    <input type="text" name="username" placeholder="Username" required>
+                </div>
+                <div class="user-input">
+                    <input type="text" name="nama_lengkap" placeholder="Nama Lengkap" required>
+                </div>
+                <div class="user-input">
+                    <input type="password" name="userpassword" placeholder="Password" required>
+                </div>
+                <div class="user-input">
+                    <input type="password" name="cuserpassword" placeholder="Konfirmasi Password" required>
+                </div>
+                <div class="user-btn">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Batal</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
